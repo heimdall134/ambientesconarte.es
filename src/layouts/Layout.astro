@@ -27,6 +27,23 @@ const makeTitle = title
 <!doctype html>
 <html lang="en">
     <head>
+        <!-- Google Tag Manager -->
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({
+                    "gtm.start": new Date().getTime(),
+                    event: "gtm.js",
+                });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != "dataLayer" ? "&l=" + l : "";
+                j.async = true;
+                j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, "script", "dataLayer", "GTM-P55TCX8P");
+        </script>
+        <!-- End Google Tag Manager -->
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -51,8 +68,21 @@ const makeTitle = title
                 },
             }}
         />
+        <meta
+            name="p:domain_verify"
+            content="4ca93554aa77486283ecbcc4ed2bc7c0"
+        />
     </head>
     <body>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript
+            ><iframe
+                src="https://www.googletagmanager.com/ns.html?id=GTM-P55TCX8P"
+                height="0"
+                width="0"
+                style="display:none;visibility:hidden"></iframe></noscript
+        >
+        <!-- End Google Tag Manager (noscript) -->
         <Navbar class="top-0 z-50 bg-white shadow" />
         <slot />
         <Footer />
