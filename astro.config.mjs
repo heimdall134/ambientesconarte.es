@@ -6,9 +6,10 @@ import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://astroship.web3templates.com",
-  integrations: [mdx(), sitemap(), icon()],
-  vite: {
-    plugins: [tailwindcss()],
-  },
+    // site: "https://ambientesconarte.es",
+    site: "https://wonderful-starburst-2a2deb.netlify.app",
+    integrations: [mdx(), sitemap(), icon()],
+    vite: {
+        plugins: [tailwindcss()],
+    },
 });
